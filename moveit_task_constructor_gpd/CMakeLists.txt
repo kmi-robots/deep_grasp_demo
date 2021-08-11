@@ -26,6 +26,7 @@ find_package(catkin REQUIRED COMPONENTS
 # System dependencies are found with CMake's conventions
 find_package(Eigen3 REQUIRED)
 find_package(PCL 1.8 REQUIRED)
+find_package(OpenCV REQUIRED)
 
 find_library(GPD_LIB NAMES gpd PATHS /usr/local/lib PATH_SUFFIXES lib NO_DEFAULT_PATH)
 if (GPD_LIB)
@@ -82,6 +83,7 @@ include_directories(
   ${EIGEN3_INCLUDE_DIRS}
 	${PCL_INCLUDE_DIRS}
 	${GPD_INCLUDE_DIRS}
+	  ${OpenCV_INCLUDE_DIRS}
 )
 
 include_directories(

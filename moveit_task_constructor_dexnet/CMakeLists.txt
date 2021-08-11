@@ -17,7 +17,6 @@ find_package(catkin REQUIRED COMPONENTS
 	geometry_msgs
 	image_transport
 	message_generation
-	moveit_task_constructor_msgs
 	roscpp
 	rosparam_shortcuts
 	rospy
@@ -27,7 +26,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 # System dependencies are found with CMake's conventions
 find_package(Eigen3 REQUIRED)
-find_package(OpenCV 3.2 REQUIRED)
+find_package(OpenCV REQUIRED)
 
 # Service files
 add_service_files(

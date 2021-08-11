@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
   <!-- Franka Panda in gazebo + ros control -->
-  <include file="$(find deep_grasp_task)/launch/panda_world.launch"/>
+   <include file="$(find deep_grasp_task)/launch/panda_world.launch"/> 
 
   <!-- spawn object -->
   <!-- cylinder -->
